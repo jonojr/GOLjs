@@ -1,0 +1,11 @@
+changes[2][1]= 1;
+changes[2][2]= 1;
+changes[2][3]= 1;
+changes[1][3]= 1;
+changes[0][2]= 1;
+
+board[2][1]= 1;
+board[2][2]= 1;
+board[2][3]= 1;
+board[1][3]= 1;
+board[0][2]= 1;
