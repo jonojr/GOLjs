@@ -142,10 +142,13 @@ board[36][4] = 1;
 //console.log(changes);
 draw();
 
-var loop = setInterval(function(){processStep()}, delay);
-
 slider.oninput = function(){
 	delay = this.value;
-	clearInterval(loop)
-	loop = setInterval(function(){processStep()}, delay);
 }
+
+function loop() {
+  processStep();
+  window.setTimeout(loop, delay);
+}
+
+loop();
